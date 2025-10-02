@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facit - Fallrisk-Identifieraren</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="media/logo.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="content-wrapper">
+            <h1 class="game-title">Facit - Placering av Hotspots</h1>
+            
+            <div class="instructions">
+                <h2>Felsökningsverktyg</h2>
+                <p>Detta verktyg visar exakt var alla fallrisker är placerade i varje arbetsmiljöbild. Använd det för att kontrollera och justera hotspot-positioner.</p>
+                <ul>
+                    <li>Alla hotspots visas som gröna markeringar</li>
+                    <li>Varje markering visar riskens namn</li>
+                    <li>Koordinater och dimensioner visas för utveckling</li>
+                    <li>Används för kalibrering av spellogiken</li>
+                </ul>
+            </div>
+
+            <div id="facit-container" class="facit-container">
+                <!-- Här kommer bilderna och hotspots att visas -->
+            </div>
+
+            <div class="start-section">
+                <a href="index.html" class="start-button">Tillbaka till start</a>
+                <a href="game.html" class="start-button" style="margin-left: 1rem;">Till spelet</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Fallrisk-Identifieraren. Felsökningsverktyg för utvecklare.</p>
+        </div>
+    </footer>
+
+    <script src="js/game.js"></script>
+    <script src="js/facit.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallrisk-Identifieraren - Spel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="game-header">
+        <div class="logo-container">
+            <img src="media/logo.png" alt="Logo" class="logo-small">
+        </div>
+        <nav class="game-nav">
+            <a href="index.html" class="nav-button">Tillbaka till start</a>
+        </nav>
+    </header>
+
+    <main class="game-container">
+        <div class="game-info">
+            <h1>Fallrisk-Identifieraren</h1>
+            <div class="score-board">
+                <span class="score">Poäng: <span id="score">0</span></span>
+                <span class="timer">Tid: <span id="timer">60</span>s</span>
+                <span class="found-risks">Hittade: <span id="foundRisks">0</span>/5</span>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="game-scene" id="gameScene">
+                <img id="workplaceImage" class="workplace-image" style="display: none;" alt="Arbetsmiljöbild">
+                <p class="loading-text" id="loadingText">Klicka på "Starta" för att börja spela!</p>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button class="control-button" id="startBtn">Starta</button>
+            <button class="control-button" id="pauseBtn">Pausa</button>
+            <button class="control-button" id="resetBtn">Återställ</button>
+        </div>
+
+        <div class="game-feedback" id="feedback">
+            <p>Klicka på "Starta" för att börja spela!</p>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div id="gameOverModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2 id="gameOverTitle">Spelet är slut!</h2>
+                <p id="gameOverScore">Din slutpoäng: 0</p>
+                <p id="gameOverMessage">Bra jobbat!</p>
+                <button id="playAgainBtn" class="control-button">Spela igen</button>
+                <button id="backToMenuBtn" class="control-button">Tillbaka till start</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="game-footer">
+        <div class="footer-content">
+            <p>Tips: Leta efter ojämna ytor, våta områden, lösa mattor och andra potentiella fallrisker.</p>
+        </div>
+    </footer>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
